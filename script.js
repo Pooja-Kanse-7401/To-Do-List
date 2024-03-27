@@ -26,13 +26,17 @@ function getTodos(){
             document.querySelector('#list').innerHTML+=`
                 <li id="todoItem">
                 
-                    <div id="inner">
-                    <input class="form-check-input-border" type="checkbox" name="" id="checked" onchange="toggleStrikeThrough(this)"/>
-                        ${val} 
+                     <div id="inner" class="d-flex flex-row justify-content-between  p-2 align-item-center">
+                        <div>
+                            <input class="form-check-input-border" type="checkbox" name="" id="checked" onchange="toggleStrikeThrough(this)"/>
                         </div>
                         <div>
-                        <button class="btn btn-danger m-2" onclick="deleteTodo(${index})">Remove</button>
-                        <button class="btn btn-success m-2" onclick="updateTodo(${index})">Update</button>
+                            ${val}   
+                        </div>
+                        <div>
+                            <button class="btn btn-danger " onclick="deleteTodo(${index})">Remove</button>
+                            <button class="btn btn-success " onclick="updateTodo(${index})">Update</button>
+                        </div>
                     </div>
             
                 </li>`
