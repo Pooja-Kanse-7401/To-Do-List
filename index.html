@@ -42,7 +42,7 @@
         }
 
         #inner {
-            width: 25vw;
+            width: 90vw;
         }
 
         #list {
@@ -71,6 +71,26 @@
         #inner1{
             width: 50%;
             height: 100%;
+        }
+        @media (max-width: 900px){
+            #main {
+                width: 80vw;
+            }
+            #outer {
+                height: 25vh;
+                width: 90%;
+            }
+            #list {
+                height: 50%;
+                width: 90%;
+                overflow-x: scroll;
+            }
+            #inner {
+                display: flex;
+                flex-direction: row;
+                width: 60vw;
+                margin-left: 60px;
+            }
         }
     
     </style>
